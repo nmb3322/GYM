@@ -54,7 +54,6 @@ public class BoardController {
 	}
 
 	// BoardModifyForm: 게시글 수정 페이지이동 메소드
-
 	@GetMapping("/boardModifyForm")
 	private ModelAndView boardModifyForm(@RequestParam("boardNo") int boardNo) {
 		mav = boardsvc.boardModifyForm(boardNo);
@@ -62,20 +61,20 @@ public class BoardController {
 		return mav;
 	}
 
-//BoardModify : 게시글 수정 메소드
+	//BoardModify : 게시글 수정 메소드
 	@PostMapping("/boardModify")
 	private ModelAndView boardModify(@ModelAttribute BoardDTO board) throws IllegalStateException, IOException {
 		mav = boardsvc.boardModify(board);
 
 		return mav;
 	}
-	
+
 	// boardDelete : 게시글 삭제
 	@GetMapping("/boardDelete")
 	private ModelAndView boardDelete(@RequestParam("boardNo") int boardNo) {
-		
+
 		mav = boardsvc.boardDelete(boardNo);
-		
+
 		return mav;
 	}
 
