@@ -71,10 +71,10 @@ public class BoardController {
 
 	// boardDelete : 게시글 삭제
 	@GetMapping("/boardDelete")
-	private ModelAndView boardDelete(@RequestParam("boardNo") int boardNo) {
-
+	public ModelAndView boardDelete(@RequestParam("boardNo") int boardNo) {
+		
 		mav = boardsvc.boardDelete(boardNo);
-
+		
 		return mav;
 	}
 

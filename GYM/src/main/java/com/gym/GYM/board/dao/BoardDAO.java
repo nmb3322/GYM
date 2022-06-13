@@ -21,4 +21,5 @@ public interface BoardDAO {
 
 	int boardDelete(int boardNo);
 
+
 }

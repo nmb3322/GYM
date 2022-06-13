@@ -69,7 +69,7 @@
 
 
 <button th:onclick ="|location.href ='@{boardModifyForm(boardNo=${boardView.boardNo})}'|">게시글 수정페이지 이동</button>
-<button onclick ='location.href = "boardDelete"'>게시글 삭제</button>
+<button th:onclick ="|location.href ='@{boardDelete(boardNo=${boardView.boardNo})}'|">게시글 삭제</button>g
 <button onclick ="history.back(-1);">뒤로가기</button>
 
 

@@ -130,7 +130,7 @@ public class BoardServiceImpl implements BoardService {
 		
 		int result = boarddao.boardDelete(boardNo);
 		
-		if(result > 0) {
+		if(result > 0 ) {
 			mav.setViewName("redirect:/boardList");
 		}else {
 			mav.setViewName("index");
@@ -138,5 +138,7 @@ public class BoardServiceImpl implements BoardService {
 		
 		return mav;
 	}
+
+	
 
 }
