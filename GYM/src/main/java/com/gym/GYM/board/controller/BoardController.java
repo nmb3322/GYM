@@ -15,7 +15,9 @@ import com.gym.GYM.board.service.BoardService;
 
 @Controller
 public class BoardController {
-
+	
+	// 테스트 주석처리
+	
 	@Autowired
 	private BoardService boardsvc;
 
@@ -43,7 +45,7 @@ public class BoardController {
 		mav = boardsvc.boardRegist(board);
 
 		return mav;
-
+		
 	}
 
 	// BoardView게시글 상세보기
